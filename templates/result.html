@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+   <body>
+
+{% for k,v in result.items() %}
+    {%  if k == 'name' %}
+    Hello {{ v }}
+    {%  endif %}
+{% endfor %}
+{{ result.get(name) }}
+{{ result[result] }}
+
+   </body>
+</html>

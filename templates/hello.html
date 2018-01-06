@@ -1,0 +1,23 @@
+<html>
+   <body>
+
+      <h1>Hello {{ user_name }}! </h1>
+
+      {% if user_name == 'John' %}
+        Hi John again!
+      {% else %}
+          Hi!
+      {% endif %}
+
+        <table>
+                {% for name in names %}
+            <tr>
+                <td>
+                    {{ name }}
+                </td>
+            </tr>
+                {% endfor %}
+
+        </table>
+   </body>
+</html>
