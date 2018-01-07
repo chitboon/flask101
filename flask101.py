@@ -52,4 +52,4 @@ def show_blog(post_id):
     return 'Blog {:d}'.format(post_id)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port='80')
